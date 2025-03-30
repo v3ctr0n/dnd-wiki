@@ -1,0 +1,15 @@
+site_name: DnD Wiki
+
+theme: mkdocs  # Default MkDocs theme or use 'material' if preferred
+
+extra_css:
+  - css/index.css  # Add custom CSS
+
+nav:
+  - Home: index.html  # Link to custom HTML file (if you prefer to use an HTML file for the homepage)
+  - Characters: characters.md
+  - Lore: lore.md
+  - Gallery: gallery.md
+
+site_dir: site  # Ensure the site is built in the 'site' folder
+
