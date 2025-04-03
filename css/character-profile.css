@@ -4,14 +4,14 @@ body, h1, h2, h3, p, ul {
     padding: 0;
 }
 
-/* Ensure the Table of Contents stays on the right */
-.toc {
+/* Styling the TOC to appear in a box on the right side of the page */
+.md-nav__toc {
     position: fixed;
-    top: 50px; /* Adjust this based on your header height */
+    top: 50px; /* Adjust according to your header height */
     right: 10px;
-    width: 250px; /* Adjust the width of the sidebar */
+    width: 250px; /* Adjust the width as needed */
     background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
