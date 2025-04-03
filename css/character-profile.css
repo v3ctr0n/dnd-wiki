@@ -4,7 +4,6 @@ body, h1, h2, h3, p, ul {
     padding: 0;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -27,27 +26,29 @@ body::before {
 }
 
 header, .container, .main-content {
-    position: relative;
     z-index: 1;
     font-family: "Sorts Mill Goudy", serif;
 }
 
 header {
-    background: rgba(0, 0, 0, 0.6); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
     text-align: center;
     font-weight: 900;
-    font-family: "Sorts Mill Goudy", serif;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.432);
     z-index: 2;
-    position: relative;
 }
 
 .header-content {
     display: flex;
-    justify-content: center; /* Center the navigation links */
+    justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
 }
 
 .main-nav ul {
@@ -55,10 +56,9 @@ header {
     padding: 0;
     display: flex;
     gap: 30px;
-    justify-content: center; /* Center the navigation links */
+    justify-content: center;
     width: 100%;
 }
-
 
 .main-nav li {
     display: inline-block;
@@ -75,7 +75,6 @@ header {
     color: #1699e6;
 }
 
-
 .main-content {
     display: flex;
     margin: 20px;
@@ -87,7 +86,7 @@ header {
 
 .character-profile {
     flex: 3;
-    background: rgba(231, 230, 230, 0.678); 
+    background: rgba(231, 230, 230, 0.678);
     padding: 20px;
     border-radius: 5px;
     text-align: justify;
@@ -131,7 +130,7 @@ header {
 }
 
 .character-text img {
-    word-wrap: break-word; 
+    word-wrap: break-word;
     max-width: 100%;
     height: auto;
     border-radius: 5px;
@@ -155,8 +154,8 @@ header {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    font-family:'Crimson Text';
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Crimson Text';
 }
 
 .character-details-content h2 {
@@ -184,68 +183,71 @@ header {
     color: #bdbcbc;
 }
 
-/* Styling the Table of Contents box */
-#table-of-contents {
+#table-of-contents-box {
     position: fixed;
-    top: 50px; /* Adjust depending on your header height */
-    right: 10px;
-    width: 250px; /* Adjust width as needed */
+    top: 520px;
+    right: 40px;
+    width: 220px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  
-  /* Ensure the TOC is scrollable if there is a lot of content */
-  #table-of-contents ul {
-    max-height: 80vh; /* Adjust height limit as needed */
+    z-index: 100;
     overflow-y: auto;
-    padding: 0;
+}
+
+#table-of-contents {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#table-of-contents-box ul {
+    padding-left: 0;
     margin: 0;
-  }
-  
-  /* Optional: Style the TOC links */
-  #table-of-contents ul li a {
+    list-style-type: none;
+}
+
+#table-of-contents-box ul li a {
     display: block;
-    padding: 5px 0;
+    padding: 1px;
     text-decoration: none;
-    color: #007bff; /* Change link color */
-  }
-  
-  #table-of-contents ul li a:hover {
-    color: #0056b3; /* Darker color on hover */
-  }
+    color: #bdbcbc;
+    font-size: 1em;
+}
+
+#table-of-contents-box ul li a:hover {
+    color: #0056b3;
+}
+
+#table-of-contents-box ul ul {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
 footer {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
     text-align: center;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1, h2 {
     font-family: "Sorts Mill Goudy", serif;
-}
-
-h2 {
-    font-family: "Sorts Mill Goudy", serif;
-    font-weight: 600;
-    font-size: xx-large;
 }
 
 p {
-    font-family:'Crimson Text';
+    font-family: 'Crimson Text';
     font-weight: 600;
     color: #f7f5f5;
 }
 
 /* Mobile styles */
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .header-content {
         justify-content: center;
-        margin-left: -70px;
+        margin-left: 0;
     }
 
     .main-content {
@@ -273,7 +275,6 @@ p {
     .character-details-content ul li,
     .table-of-contents h2 {
         font-size: 1rem;
-        width: 100%;
     }
 
     .table-of-contents {
@@ -288,14 +289,12 @@ p {
         width: 100%;
     }
 
-    .footer {
+    footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0px;
     }
 }
-
 
 a.headerlink {
     display: none !important;
