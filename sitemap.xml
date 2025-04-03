@@ -1,3 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://v3ctr0n.github.io/dnd-wiki/gallery/</loc>
+         <lastmod>2025-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://v3ctr0n.github.io/dnd-wiki/lore/</loc>
+         <lastmod>2025-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://v3ctr0n.github.io/dnd-wiki/characters/abigor/</loc>
+         <lastmod>2025-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://v3ctr0n.github.io/dnd-wiki/characters/benedict/</loc>
+         <lastmod>2025-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://v3ctr0n.github.io/dnd-wiki/characters/dora/</loc>
+         <lastmod>2025-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://v3ctr0n.github.io/dnd-wiki/characters/jackaby/</loc>
+         <lastmod>2025-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://v3ctr0n.github.io/dnd-wiki/characters/julian/</loc>
+         <lastmod>2025-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://v3ctr0n.github.io/dnd-wiki/characters/leon/</loc>
+         <lastmod>2025-04-03</lastmod>
+    </url>
 </urlset>
