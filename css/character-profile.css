@@ -221,6 +221,7 @@ header {
     text-decoration: underline;
 }
 
+
 footer {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
@@ -245,88 +246,63 @@ p {
 }
 
 /* Mobile styles */
+
 @media (max-width: 600px) {
 
     .header-content {
-        display: flex;
-        justify-content: center; /* Center the navigation links */
-        align-items: center;
+        justify-content: center;
         margin-left: -70px;
     }
-    
-    .main-nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        gap: 30px;
-        justify-content: center; /* Center the navigation links */
-        width: 100%;
-    }
-    
-
 
     .main-content {
         flex-direction: column;
         margin: 1px;
         gap: 10px;
-        width: 100%; /* Ensure the main content takes the full width of the container */
+        width: 100%;
     }
 
-    .character-profile {
-        margin-bottom: 20px;
-        width: 100%; /* Ensure the character profile takes full width on mobile */
-        flex: 3;
-        background: rgba(231, 230, 230, 0.678); 
-        padding: 20px;
-        border-radius: 5px;
-        text-align: justify;
-        width: 100%; /* Added to ensure it takes full width of its container */
-        box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    }
-
+    .character-profile,
     .character-details {
-        max-width: 100%;
-        position: static;
-        max-height: none;
-        overflow: visible;
-        width: 100%; /* Ensure the character details take full width on mobile */
+        width: 100%;
     }
 
     .character-details-content {
-        width: 270px; /* Ensure these elements take full width on mobile */   
-
+        width: 100%;
+        max-width: 270px;
     }
 
     .character-text h1 {
         font-size: 2rem;
-        width: 100%;
     }
 
     .character-text p,
     .character-details-content ul li,
     .table-of-contents h2 {
         font-size: 1rem;
-        width: 310px;
+        width: 100%;
     }
 
-     /* Reposition Table of Contents above Character Details */
-     .table-of-contents {
+    .table-of-contents {
         font-size: 18px;
         margin: 25px;
-        width: 270px;
-        order: -1; /* Moves the Table of Contents above the Character Details */
+        width: 100%;
+        order: -1;
     }
 
     .table-of-contents h2 {
         font-size: 30px;
-        width: 250px;
+        width: 100%;
     }
 
-
-   .footer{
+    .footer {
         display: flex;
-        justify-content: center; /* Center the navigation links */
+        justify-content: center;
         align-items: center;
         margin: 0px;
     }
+}
+
+
+a.headerlink {
+    display: none !important;
 }
