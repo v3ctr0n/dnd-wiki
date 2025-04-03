@@ -4,8 +4,8 @@ body {
   line-height: 1.6;
   color: #333;
   padding: 20px;
-  background: url('/dnd-wiki/img/londinium.jpg') no-repeat center center fixed;
-  background-size: cover; /* Ensures the background image covers the full page */
+  background: url('/img/londinium.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
