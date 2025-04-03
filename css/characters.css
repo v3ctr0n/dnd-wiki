@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   color: #333;
   padding: 20px;
-  background: url('/img/londinium.jpg') no-repeat center center fixed !important;
+  background: url('/dnd-wiki/img/londinium.jpg') no-repeat center center fixed !important;
   background-size: cover;
 }
 
